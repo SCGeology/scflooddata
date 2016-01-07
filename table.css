@@ -1,0 +1,44 @@
+/*TABLE CSS*/
+
+table {
+	margin:0 ;padding:0px;
+    table-layout:fixed;
+    width:100%;
+    font-family: Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	padding:0px;
+    margin:2px 0 2px 2px;
+}
+table td{
+	vertical-align:middle;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	text-align:left;
+	padding:2px;
+	font-size:12px;
+}    
+
+table th {background-color:#5fa5e3;color:#fff;font-size:0.9em;}
+.first {width:250px;}
+.last {width:200px;}
+#upperheaders{color:#fff;font-weight: bold;}
+.none{background-color:transparent;}
+.watershed{background-color:#00ace6;}
+.event{background-color:#0099cc;}
+.historic{background-color:#0086b3;}
+
+table th, .table td {border: 1px solid #001933;}
+table td {text-align:center}
+
+table.dataTable tbody tr:nth-child(2n+2) {background-color:#ddd;}
+
+tr {height:25px;}
+
+.record{background-color:#ffa64d;}
+.topfive{background-color:#ffe580;}
+
+.remark{text-overflow: ellipsis;background-color:#eee;}
+.remark:hover{overflow:visible;white-space: normal;cursor:pointer}

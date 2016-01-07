@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Event Precip Table</title>
+        <meta name="description" content="Event Daily Precip table for SC Flood">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+        <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+     </head>
+    <style>
+        body {width:95%;}
+        .first {width:100px;}
+    </style>
+    
+    <body>
+<h2>Flood Event Daily Precipitation Data, Sept. 28 - Oct. 6</h2>
+<table id = "dptable" class="table table-bordered table-hover table-condensed">
+<thead>
+<tr id="upperheaders">
+    <td class="none first"></td>
+    <td class="watershed" colspan="9">Daily Values</td>
+    <td class="event" colspan="5">Accumulation Values</td>
+</tr>    
+<tr><th title="Field #1">Station</th>
+<th title="Field #2">28-Sep</th>
+<th title="Field #3">29-Sep</th>
+<th title="Field #4">30-Sep</th>
+<th title="Field #5">1-Oct</th>
+<th title="Field #6">2-Oct</th>
+<th title="Field #7">3-Oct</th>
+<th title="Field #8">4-Oct</th>
+<th title="Field #9">5-Oct</th>
+<th title="Field #10">6-Oct</th>
+<th title="Field #11">24hr</th>
+<th title="Field #12">2-day</th>
+<th title="Field #13">3-day</th>
+<th title="Field #14">4-day</th>
+<th title="Field #15">7-day</th>
+</tr></thead>
+<tbody><tr><td>Anderson AP</td>
+<td align="right">0.03</td>
+<td align="right">0.11</td>
+<td align="right">0.01</td>
+<td align="right">0.19</td>
+<td align="right">0.64</td>
+<td align="right">1.42</td>
+<td align="right">2.24</td>
+<td align="right">0.02</td>
+<td align="right">0.00</td>
+<td align="right">2.24</td>
+<td align="right">3.66</td>
+<td align="right">4.30</td>
+<td align="right">4.49</td>
+<td align="right"></td>
+</tr>
+<tr><td>Andrews </td>
+<td align="right">0.15</td>
+<td align="right">0.10</td>
+<td align="right">0.50</td>
+<td align="right">1.70</td>
+<td align="right">1.67</td>
+<td align="right">4.18</td>
+<td align="right">8.80</td>
+<td align="right">3.50</td>
+<td align="right">0.20</td>
+<td align="right">8.80</td>
+<td align="right">12.98</td>
+<td align="right">16.48</td>
+<td align="right">18.15</td>
+<td align="right">20.55</td>
+</tr>
+<tr><td>Bamberg</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+<td align="right">0.03</td>
+<td align="right">0.90</td>
+<td align="right">0.10</td>
+<td align="right">2.65</td>
+<td align="right">3.01</td>
+<td align="right">2.62</td>
+<td align="right">0.07</td>
+<td align="right">3.01</td>
+<td align="right">5.66</td>
+<td align="right">8.28</td>
+<td align="right">8.35</td>
+<td align="right">9.38</td>
+</tr>
+<tr><td>Charleston AP</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.41</td>
+<td align="right">1.37</td>
+<td align="right">1.61</td>
+<td align="right">11.50</td>
+<td align="right">2.81</td>
+<td align="right">0.03</td>
+<td align="right">0.00</td>
+<td align="right">11.50</td>
+<td align="right">14.31</td>
+<td align="right">15.92</td>
+<td align="right">17.29</td>
+<td align="right"></td>
+</tr>
+<tr><td>Columbia Metro</td>
+<td align="right">0.10</td>
+<td align="right">0.02</td>
+<td align="right">0.01</td>
+<td align="right">0.08</td>
+<td align="right">0.46</td>
+<td align="right">3.57</td>
+<td align="right">6.87</td>
+<td align="right">0.54</td>
+<td align="right">0.00</td>
+<td align="right">6.87</td>
+<td align="right">10.44</td>
+<td align="right">10.98</td>
+<td align="right">11.44</td>
+<td align="right"></td>
+</tr>
+<tr><td>Florence AP</td>
+<td align="right">0.14</td>
+<td align="right">0.03</td>
+<td align="right">0.67</td>
+<td align="right">0.55</td>
+<td align="right">4.73</td>
+<td align="right">2.03</td>
+<td align="right">3.04</td>
+<td align="right">0.79</td>
+<td align="right">0.08</td>
+<td align="right">4.73</td>
+<td align="right">6.76</td>
+<td align="right">9.80</td>
+<td align="right">10.59</td>
+<td align="right">11.89</td>
+</tr>
+<tr><td>Grvl/Spart AP</td>
+<td align="right">0.15</td>
+<td align="right">0.17</td>
+<td align="right">0.05</td>
+<td align="right">0.06</td>
+<td align="right">1.26</td>
+<td align="right">2.99</td>
+<td align="right">1.99</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">2.99</td>
+<td align="right">4.98</td>
+<td align="right">6.24</td>
+<td align="right">6.30</td>
+<td align="right">6.67</td>
+</tr>
+<tr><td>Little Mountain</td>
+<td align="right">0.29</td>
+<td align="right">0.21</td>
+<td align="right">0.07</td>
+<td align="right">0.02</td>
+<td align="right">0.11</td>
+<td align="right">2.73</td>
+<td align="right">7.35</td>
+<td align="right">2.19</td>
+<td align="right">0.38</td>
+<td align="right">7.35</td>
+<td align="right">10.08</td>
+<td align="right">12.27</td>
+<td align="right">12.65</td>
+<td align="right">12.85</td>
+</tr>
+<tr><td>Sumter</td>
+<td align="right">0.15</td>
+<td align="right">0.62</td>
+<td align="right">0.02</td>
+<td align="right">0.33</td>
+<td align="right">0.16</td>
+<td align="right">2.75</td>
+<td align="right">10.67</td>
+<td align="right">8.08</td>
+<td align="right">0.57</td>
+<td align="right">10.67</td>
+<td align="right">18.75</td>
+<td align="right">21.50</td>
+<td align="right">22.07</td>
+<td align="right">22.63</td>
+</tr>
+<tr><td>Yemassee</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.05</td>
+<td align="right">0.14</td>
+<td align="right">2.65</td>
+<td align="right">2.80</td>
+<td align="right">3.00</td>
+<td align="right">0.50</td>
+<td align="right">3.00</td>
+<td align="right">5.80</td>
+<td align="right">8.45</td>
+<td align="right">8.95</td>
+<td align="right"></td>
+</tr>
+<tr><td>Aiken 2 E</td>
+<td align="right">0.08</td>
+<td align="right">0.07</td>
+<td align="right">0.00</td>
+<td align="right">0.05</td>
+<td align="right">0.16</td>
+<td align="right">0.71</td>
+<td align="right">2.05</td>
+<td align="right">0.60</td>
+<td align="right">0.11</td>
+<td align="right">2.05</td>
+<td align="right">2.76</td>
+<td align="right">3.36</td>
+<td align="right">3.52</td>
+<td align="right"></td>
+</tr>
+<tr><td>Barnwell</td>
+<td align="right">0.04</td>
+<td align="right">0.04</td>
+<td align="right">0.05</td>
+<td align="right">0.02</td>
+<td align="right">0.43</td>
+<td align="right">2.90</td>
+<td align="right">2.67</td>
+<td align="right">2.70</td>
+<td align="right">0.10</td>
+<td align="right">2.90</td>
+<td align="right">5.57</td>
+<td align="right">8.27</td>
+<td align="right">8.70</td>
+<td align="right">8.87</td>
+</tr>
+<tr><td>Beaufort MCAS</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.06</td>
+<td align="right">0.50</td>
+<td align="right">1.01</td>
+<td align="right">2.34</td>
+<td align="right">0.74</td>
+<td align="right">0.09</td>
+<td align="right">0.00</td>
+<td align="right">2.34</td>
+<td align="right">3.35</td>
+<td align="right">4.09</td>
+<td align="right">4.59</td>
+<td align="right">4.75</td>
+</tr>
+<tr><td>Chesterfield 3 E</td>
+<td align="right">0.10</td>
+<td align="right">0.20</td>
+<td align="right">0.00</td>
+<td align="right">0.48</td>
+<td align="right">0.90</td>
+<td align="right">7.20</td>
+<td align="right">0.75</td>
+<td align="right">0.12</td>
+<td align="right">0.26</td>
+<td align="right">7.20</td>
+<td align="right">8.10</td>
+<td align="right">8.85</td>
+<td align="right">9.33</td>
+<td align="right"></td>
+</tr>
+<tr><td>Greenwood Co AP</td>
+<td align="right">0.12</td>
+<td align="right">0.21</td>
+<td align="right">0.00</td>
+<td align="right">0.07</td>
+<td align="right">0.48</td>
+<td align="right">3.12</td>
+<td align="right">3.45</td>
+<td align="right">0.20</td>
+<td align="right">0.00</td>
+<td align="right">3.45</td>
+<td align="right">6.57</td>
+<td align="right">7.05</td>
+<td align="right">7.25</td>
+<td align="right"></td>
+</tr>
+<tr><td>Jocassee 8 WNW</td>
+<td align="right">0.34</td>
+<td align="right">1.41</td>
+<td align="right">0.29</td>
+<td align="right">0.77</td>
+<td align="right">1.21</td>
+<td align="right">0.86</td>
+<td align="right">4.50</td>
+<td align="right">0.07</td>
+<td align="right">0.00</td>
+<td align="right">4.50</td>
+<td align="right">5.36</td>
+<td align="right">6.57</td>
+<td align="right">7.34</td>
+<td align="right">9.38</td>
+</tr>
+<tr><td>Laurens</td>
+<td align="right">0.16</td>
+<td align="right">0.22</td>
+<td align="right">0.22</td>
+<td align="right">0.00</td>
+<td align="right">0.73</td>
+<td align="right">1.64</td>
+<td align="right">4.50</td>
+<td align="right">2.00</td>
+<td align="right">0.16</td>
+<td align="right">4.50</td>
+<td align="right">6.50</td>
+<td align="right">8.14</td>
+<td align="right">8.87</td>
+<td align="right"></td>
+</tr>
+<tr><td>Marion</td>
+<td align="right">0.28</td>
+<td align="right">0.10</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">1.00</td>
+<td align="right">2.61</td>
+<td align="right">2.12</td>
+<td align="right">2.50</td>
+<td align="right">0.60</td>
+<td align="right">2.61</td>
+<td align="right">4.73</td>
+<td align="right">7.23</td>
+<td align="right">8.23</td>
+<td align="right"></td>
+</tr>
+<tr><td>Rock Hill York Co AP</td>
+<td align="right">0.10</td>
+<td align="right">0.79</td>
+<td align="right">0.02</td>
+<td align="right">0.54</td>
+<td align="right">0.88</td>
+<td align="right">1.36</td>
+<td align="right">0.00</td>
+<td align="right">0.27</td>
+<td align="right">0.00</td>
+<td align="right">1.36</td>
+<td align="right">2.24</td>
+<td align="right">2.78</td>
+<td align="right">2.80</td>
+<td align="right"></td>
+</tr>
+<tr><td>Winnsboro</td>
+<td align="right">0.24</td>
+<td align="right">0.52</td>
+<td align="right">0.10</td>
+<td align="right">0.02</td>
+<td align="right">0.04</td>
+<td align="right">1.65</td>
+<td align="right">3.92</td>
+<td align="right">4.00</td>
+<td align="right">0.36</td>
+<td align="right">4.00</td>
+<td align="right">7.92</td>
+<td align="right">9.57</td>
+<td align="right">9.93</td>
+<td align="right">10.25</td>
+</tr>
+</tbody></table>
+        <script>
+            $(document).ready(function() {
+                $('#dptable').DataTable();
+            } );
+            
+            $('#dptable').DataTable({
+                paging:false,
+                searching:false
+            });
+                
+        </script>
+        
+    </body>
+</html>
