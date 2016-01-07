@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Fall Precip Records Table</title>
+        <meta name="description" content="Fall Precip records table for SC Flood">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+        <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+     </head>
+    <style>
+        body {width:95%;}
+        .first {width:100px;}
+    </style>
+    
+    <body>
+<h2>Weather stations that set Fall Seasonal records</h2>
+
+<table id="falltable" class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Station</th>
+<th title="Field #2">New Record</th>
+<th title="Field #3">Old Record</th>
+<th title="Field #4">Old Record Year</th>
+<th title="Field #5">Period of Record</th>
+<th title="Field #6">LAT</th>
+<th title="Field #7">LONG</th>
+</tr></thead>
+<tbody><tr><td>SULLIVANS ISLAND</td>
+<td align="right">32.22</td>
+<td align="right">28.65</td>
+<td align="right">1994</td>
+<td>1951-2015</td>
+<td align="right">32.76</td>
+<td align="right">-79.85</td>
+</tr>
+<tr><td>COLUMBIA UNIV OF SC</td>
+<td align="right">29.20</td>
+<td align="right">23.40</td>
+<td align="right">1959</td>
+<td>1954-2015</td>
+<td align="right">33.98</td>
+<td align="right">-81.02</td>
+</tr>
+<tr><td>CHARLESTON INTL AP</td>
+<td align="right">29.90</td>
+<td align="right">23.11</td>
+<td align="right">1994</td>
+<td>1938-2015</td>
+<td align="right">32.90</td>
+<td align="right">-80.04</td>
+</tr>
+<tr><td>GRNVL SPART AP</td>
+<td align="right">24.13</td>
+<td align="right">23.08</td>
+<td align="right">1975</td>
+<td>1962-2015</td>
+<td align="right">34.88</td>
+<td align="right">-82.22</td>
+</tr>
+<tr><td>SUMTER</td>
+<td align="right">33.85</td>
+<td align="right">23.05</td>
+<td align="right">1990</td>
+<td>1901-2015</td>
+<td align="right">33.94</td>
+<td align="right">-80.36</td>
+</tr>
+<tr><td>ANDREWS</td>
+<td align="right">34.43</td>
+<td align="right">23.02</td>
+<td align="right">1999</td>
+<td>1962-2015</td>
+<td align="right">33.44</td>
+<td align="right">-79.57</td>
+</tr>
+<tr><td>WALTERBORO 1 SW</td>
+<td align="right">24.52</td>
+<td align="right">22.96</td>
+<td align="right">1959</td>
+<td>1903-2015</td>
+<td align="right">32.88</td>
+<td align="right">-80.68</td>
+</tr>
+<tr><td>CHESNEE 7 WSW</td>
+<td align="right">26.17</td>
+<td align="right">22.91</td>
+<td align="right">1975</td>
+<td>1928-2015</td>
+<td align="right">35.11</td>
+<td align="right">-81.97</td>
+</tr>
+<tr><td>NEWBERRY</td>
+<td align="right">26.36</td>
+<td align="right">22.45</td>
+<td align="right">1985</td>
+<td>1893-2015</td>
+<td align="right">34.30</td>
+<td align="right">-81.62</td>
+</tr>
+<tr><td>SPARTANBURG 3 SSE</td>
+<td align="right">24.71</td>
+<td align="right">21.95</td>
+<td align="right">1990</td>
+<td>1983-2015</td>
+<td align="right">34.91</td>
+<td align="right">-81.91</td>
+</tr>
+<tr><td>GREENVILLE DWTN AP</td>
+<td align="right">21.97</td>
+<td align="right">21.42</td>
+<td align="right">1977</td>
+<td>1884-2015</td>
+<td align="right">34.85</td>
+<td align="right">-82.35</td>
+</tr>
+<tr><td>CLEMSON UNIV</td>
+<td align="right">23.91</td>
+<td align="right">21.29</td>
+<td align="right">1936</td>
+<td>1930-2015</td>
+<td align="right">34.66</td>
+<td align="right">-82.82</td>
+</tr>
+<tr><td>SANTUCK</td>
+<td align="right">26.46</td>
+<td align="right">21.26</td>
+<td align="right">1929</td>
+<td>1893-2015</td>
+<td align="right">34.63</td>
+<td align="right">-81.52</td>
+</tr>
+<tr><td>UNION 8 S</td>
+<td align="right">24.44</td>
+<td align="right">21.25</td>
+<td align="right">1976</td>
+<td>1949-2015</td>
+<td align="right">34.61</td>
+<td align="right">-81.66</td>
+</tr>
+<tr><td>BAMBERG</td>
+<td align="right">24.97</td>
+<td align="right">21.00</td>
+<td align="right">1992</td>
+<td>1951-2015</td>
+<td align="right">33.30</td>
+<td align="right">-81.03</td>
+</tr>
+<tr><td>ANTREVILLE</td>
+<td align="right">24.68</td>
+<td align="right">20.78</td>
+<td align="right">1957</td>
+<td>1952-2015</td>
+<td align="right">34.29</td>
+<td align="right">-82.53</td>
+</tr>
+<tr><td>CHERAW</td>
+<td align="right">21.49</td>
+<td align="right">20.61</td>
+<td align="right">1945</td>
+<td>1893-2015</td>
+<td align="right">34.73</td>
+<td align="right">-79.88</td>
+</tr>
+<tr><td>LOCKHART</td>
+<td align="right">21.91</td>
+<td align="right">20.19</td>
+<td align="right">1990</td>
+<td>1926-2015</td>
+<td align="right">34.78</td>
+<td align="right">-81.46</td>
+</tr>
+<tr><td>WATEREE DAM</td>
+<td align="right">21.23</td>
+<td align="right">20.14</td>
+<td align="right">1948</td>
+<td>1893-2015</td>
+<td align="right">34.33</td>
+<td align="right">-80.70</td>
+</tr>
+<tr><td>SANDHILL RSCH</td>
+<td align="right">29.97</td>
+<td align="right">19.94</td>
+<td align="right">1959</td>
+<td>1957-2015</td>
+<td align="right">34.14</td>
+<td align="right">-80.87</td>
+</tr>
+<tr><td>COLUMBIA METRO AP</td>
+<td align="right">26.08</td>
+<td align="right">19.88</td>
+<td align="right">1959</td>
+<td>1948-2015</td>
+<td align="right">33.94</td>
+<td align="right">-81.12</td>
+</tr>
+<tr><td>WINNSBORO</td>
+<td align="right">27.82</td>
+<td align="right">19.47</td>
+<td align="right">1957</td>
+<td>1896-2015</td>
+<td align="right">34.37</td>
+<td align="right">-81.09</td>
+</tr>
+<tr><td>CHESTER 1 SE</td>
+<td align="right">22.55</td>
+<td align="right">19.46</td>
+<td align="right">1957</td>
+<td>1922-2015</td>
+<td align="right">34.68</td>
+<td align="right">-81.20</td>
+</tr>
+<tr><td>LITTLE MTN</td>
+<td align="right">28.74</td>
+<td align="right">19.32</td>
+<td align="right">1992</td>
+<td>1893-2015</td>
+<td align="right">34.19</td>
+<td align="right">-81.42</td>
+</tr>
+<tr><td>FT MILL 4 NW</td>
+<td align="right">19.56</td>
+<td align="right">19.03</td>
+<td align="right">1989</td>
+<td>1928-2015</td>
+<td align="right">35.02</td>
+<td align="right">-81.01</td>
+</tr>
+<tr><td>WOODRUFF 5 NW</td>
+<td align="right">23.99</td>
+<td align="right">18.94</td>
+<td align="right">2002</td>
+<td>1970-2015</td>
+<td align="right">34.76</td>
+<td align="right">-82.11</td>
+</tr>
+<tr><td>CATAWBA</td>
+<td align="right">19.04</td>
+<td align="right">18.28</td>
+<td align="right">1976</td>
+<td>1906-2015</td>
+<td align="right">34.86</td>
+<td align="right">-80.92</td>
+</tr>
+<tr><td>FLORENCE RGNL AP</td>
+<td align="right">22.10</td>
+<td align="right">17.89</td>
+<td align="right">2008</td>
+<td>1948-2015</td>
+<td align="right">34.19</td>
+<td align="right">-79.72</td>
+</tr>
+<tr><td>MONCKS CORNER 4 N</td>
+<td align="right">28.20</td>
+<td align="right">17.14</td>
+<td align="right">2006</td>
+<td>1948-2015</td>
+<td align="right">33.24</td>
+<td align="right">-79.99</td>
+</tr>
+<tr><td>GREAT FALLS</td>
+<td align="right">19.66</td>
+<td align="right">16.82</td>
+<td align="right">1957</td>
+<td>1940-2015</td>
+<td align="right">34.56</td>
+<td align="right">-80.89</td>
+</tr>
+</tbody></table>
+        <script>
+            $(document).ready(function() {
+                $('#falltable').DataTable();
+            } );
+            
+            $('#falltable').DataTable({
+                paging:false,
+                searching:false
+            });
+                
+        </script>
+        
+    </body>
+</html>

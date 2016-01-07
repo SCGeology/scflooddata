@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Peak Streamflow Table</title>
+        <meta name="description" content="Peak Streamflow table for SC Flood">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+        <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+     </head>
+    <style>
+        body {width:2000px;padding:0 50px 0 10px;}
+    </style>
+    <body>
+<h2>Flood Event Peak Streamflow and Stage Data</h2>
+<table class="table table-bordered table-hover table-condensed" id="sftable">
+<thead>
+<tr id="upperheaders">
+    <td class="none first" colspan="1"></td>
+    <td class="none" colspan="1"></td>
+    <td class="watershed" colspan="2">Watershed Characteristics</td>
+    <td class="event" colspan="5">October 2015 Event Data</td>
+    <td class="historic" colspan="4">Historic Data</td>
+    <td class="none" colspan="1"></td>
+    <td class="none last" colspan="1"></td>
+</tr>    
+<tr><th title="Field #1">Gage Name</th>
+<th title="Field #2">Site Number</th>
+<th title="Field #3">% Impervious</th>
+<th title="Field #4">Basin Area <br> (sq mi)</th>
+<th title="Field #5">Peak Stage <br> (ft)</th>
+<th title="Field #6">Peak Streamflow <br> (cfs)</th>
+<th title="Field #7">Oct Peak Day</th>
+<th title="Field #8">Record</th>
+<th title="Field #9">Rank and Period of Record</th>
+<th title="Field #10">Previous Record Year</th>
+<th title="Field #11">Previous Record Stage</th>
+<th title="Field #12">Previous Record Flow</th>
+<th title="Field #13">Average Daily Flow</th>
+<th title="Field #14">Regulated?</th>
+<th title="Field #15">Remarks <br> (hover for full text)</th>
+</tr></thead>
+<tbody><tr><td>Waccamaw River near Longs</td>
+<td align="right">2110500</td>
+<td align="right">0.79</td>
+<td align="right">1424.54</td>
+<td align="right">15.17</td>
+<td>16,900</td>
+<td align="right">6</td>
+<td class="topfive">Top 3</td>
+<td>2 out of 64</td>
+<td align="right">1999</td>
+<td align="right">17.94</td>
+<td align="right">28,200</td>
+<td align="right">1,213</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Black Creek near McBee</td>
+<td align="right">2130900</td>
+<td align="right">1.18</td>
+<td align="right">114.80</td>
+<td align="right">10.24</td>
+<td>1,030</td>
+<td align="right">4</td>
+<td>No</td>
+<td>16 out of 55</td>
+<td align="right">1990</td>
+<td align="right">13.07</td>
+<td align="right">4,500</td>
+<td align="right">142</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Pee Dee River at Pee Dee</td>
+<td align="right">2131000</td>
+<td align="right">2.43</td>
+<td align="right">8816.55</td>
+<td align="right">22.81</td>
+<td>30,100</td>
+<td align="right">8</td>
+<td>No</td>
+<td>55 out of 76</td>
+<td align="right">1945</td>
+<td align="right">33.30</td>
+<td align="right">22,000</td>
+<td align="right">9,410</td>
+<td>Yes</td>
+<td> </td>
+</tr>
+<tr><td>Lynches River near Bishopville</td>
+<td align="right">2131500</td>
+<td align="right">0.79</td>
+<td align="right">661.75</td>
+<td align="right">14.59</td>
+<td>5,890</td>
+<td align="right">6</td>
+<td>No</td>
+<td>38 out of 72</td>
+<td align="right">1945</td>
+<td align="right">22.35</td>
+<td align="right">29,400</td>
+<td align="right">694</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Lynches River at Effingham</td>
+<td align="right">2132000</td>
+<td align="right">0.84</td>
+<td align="right">1047.32</td>
+<td align="right">19.73</td>
+<td>17,000</td>
+<td align="right">6</td>
+<td class="topfive">Top 3</td>
+<td>3 out of 88</td>
+<td align="right">1945</td>
+<td align="right">21.21</td>
+<td align="right">25,000</td>
+<td align="right">993</td>
+<td>No</td>
+<td class="remark">Oct. 2015 peak is third largest peak since 1892</td>
+</tr>
+<tr><td>Little Pee Dee River at Galivants Ferry</td>
+<td align="right">2135000</td>
+<td align="right">1.34</td>
+<td align="right">2801.64</td>
+<td align="right">9.17</td>
+<td>8,230</td>
+<td align="right">11</td>
+<td>No</td>
+<td>53 out of 74</td>
+<td align="right">1964</td>
+<td align="right">13.01</td>
+<td align="right">27,600</td>
+<td align="right">2,924</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Black River at Kingstree</td>
+<td align="right">2136000</td>
+<td align="right">1.47</td>
+<td align="right">1234.04</td>
+<td align="right">22.65</td>
+<td>83,700</td>
+<td align="right">6</td>
+<td class="record">Yes</td>
+<td>1 out of 87</td>
+<td align="right">1973</td>
+<td align="right">19.77</td>
+<td align="right">58,000</td>
+<td align="right">927</td>
+<td>No</td>
+<td class="remark">Largest peak since 1893</td>
+</tr>
+<tr><td>Wateree River near Camden</td>
+<td align="right">2148000</td>
+<td align="right">4.61</td>
+<td align="right">5051.46</td>
+<td align="right">29.31</td>
+<td>50,900</td>
+<td align="right">4</td>
+<td>No</td>
+<td>31 out of 124</td>
+<td align="right">1916</td>
+<td align="right">40.40</td>
+<td align="right">400,000</td>
+<td align="right">5,838</td>
+<td>Yes</td>
+<td class="remark">Regulated since 1919</td>
+</tr>
+<tr><td>Broad River near Carlisle</td>
+<td align="right">2156500</td>
+<td align="right">1.96</td>
+<td align="right">2778.05</td>
+<td align="right">12.20</td>
+<td>21,800</td>
+<td align="right">4</td>
+<td>No</td>
+<td>68 out of 75</td>
+<td align="right">1976</td>
+<td align="right">31.51</td>
+<td align="right">123,000</td>
+<td align="right">3,725</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Broad River at Alston</td>
+<td align="right">2161000</td>
+<td align="right">2.42</td>
+<td align="right">4768.74</td>
+<td align="right">22.16</td>
+<td>73,200</td>
+<td align="right">4</td>
+<td>No</td>
+<td>13 out of 45</td>
+<td align="right">1903</td>
+<td align="right">29.02</td>
+<td align="right">140,000</td>
+<td align="right">5,773</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Smith Branch at N. Main St. at Columbia</td>
+<td align="right">2162093</td>
+<td align="right">43.29</td>
+<td align="right">5.70</td>
+<td align="right">18.87</td>
+<td>4,180</td>
+<td align="right">4</td>
+<td class="record">Yes</td>
+<td>1 out of 38</td>
+<td align="right">2013</td>
+<td align="right">15.12</td>
+<td align="right">3,820</td>
+<td align="right">9</td>
+<td>No</td>
+<td class="remark">Maximum peak streamflow on Oct. 4th exceeded 4,180 cfs. This is the upper limit of the current rating curve. Peak stage determined by high water marks because gage equipment damaged. </td>
+</tr>
+<tr><td>Saluda River near Greenville</td>
+<td align="right">2162500</td>
+<td align="right">0.83</td>
+<td align="right">296.11</td>
+<td align="right">4.69</td>
+<td>1,660</td>
+<td align="right">4</td>
+<td>No</td>
+<td>69 out of 71</td>
+<td align="right">1949</td>
+<td align="right">19.38</td>
+<td align="right">11,000</td>
+<td align="right">609</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Saluda River near Columbia</td>
+<td align="right">2169000</td>
+<td align="right">3.35</td>
+<td align="right">2521.27</td>
+<td align="right">14.26</td>
+<td>58,000</td>
+<td align="right">4</td>
+<td>No</td>
+<td>-- out of 89</td>
+<td align="right">1929</td>
+<td align="right">15.22</td>
+<td align="right">67,000</td>
+<td align="right">2,675</td>
+<td>Yes</td>
+<td class="remark">Station regulated since 1930. The maximum peak streamflow on Oct. 4th exceeded 58,000 cfs. This is the upper limit of current rating curve. Peak stage determined by high water marks because gage equipment was damaged. </td>
+</tr>
+<tr><td>Congaree River at Columbia</td>
+<td align="right">2169500</td>
+<td align="right">2.81</td>
+<td align="right">7830.04</td>
+<td align="right">31.81</td>
+<td>185,000</td>
+<td align="right">4</td>
+<td>No</td>
+<td>8 out of 123</td>
+<td align="right">1908</td>
+<td align="right">39.80</td>
+<td align="right">364,000</td>
+<td align="right">8,581</td>
+<td>Yes</td>
+<td class="remark">Regulation from Saluda River in 1929</td>
+</tr>
+<tr><td>Gills Creek at Columbia</td>
+<td align="right">2169570</td>
+<td align="right">19.91</td>
+<td align="right">60.24</td>
+<td align="right">19.60</td>
+<td>2380</td>
+<td align="right">4</td>
+<td class="record">Yes </td>
+<td>1 out of 50</td>
+<td align="right">1979</td>
+<td align="right">8.66</td>
+<td align="right">2,880</td>
+<td align="right">70</td>
+<td>No</td>
+<td class="remark">Maximum peak streamflow on Oct. 4th exceeded 2,380 cfs. This is the upper limit of current rating curve. Peak stage determined by high water marks because gage equipment was damaged. The rank is based on peak stage on Oct 6, 2015. </td>
+</tr>
+<tr><td>South Fork Edisto River near Denmark</td>
+<td align="right">2173000</td>
+<td align="right">0.93</td>
+<td align="right">708.18</td>
+<td align="right">7.94</td>
+<td>2,100</td>
+<td align="right">8</td>
+<td>No</td>
+<td>49 out of 83</td>
+<td align="right">1929</td>
+<td align="right">11.70</td>
+<td align="right">17,100</td>
+<td align="right">713</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>North Fork Edisto River at Orangeburg</td>
+<td align="right">2173500</td>
+<td align="right">1.39</td>
+<td align="right">685.88</td>
+<td align="right">13.64</td>
+<td>8,640</td>
+<td align="right">5</td>
+<td class="topfive">Top 3</td>
+<td>3 out of 77</td>
+<td align="right">1928</td>
+<td align="right">14.70</td>
+<td align="right">10,000</td>
+<td align="right">721</td>
+<td>No</td>
+<td> </td>
+</tr>
+<tr><td>Edisto River near Givhans</td>
+<td align="right">2175000</td>
+<td align="right">1.05</td>
+<td align="right">2713.83</td>
+<td align="right">16.06</td>
+<td>25,600</td>
+<td align="right">8</td>
+<td class="record">Yes</td>
+<td>1 out of 81</td>
+<td align="right">1925</td>
+<td align="right">17.50</td>
+<td align="right">24,900</td>
+<td align="right">2,429</td>
+<td>No</td>
+<td> </td>
+</tr>
+</tbody></table>
+
+        <script>
+            $(document).ready(function() {
+                $('#sftable').DataTable();
+            } );
+            
+            $('#sftable').DataTable({
+                paging:false,
+                searching:false
+            });
+                
+        </script>
+        
+    </body>
+</html>

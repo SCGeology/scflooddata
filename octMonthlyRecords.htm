@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Oct Monthly Precip Table</title>
+        <meta name="description" content="Oct Monthly Precip table for SC Flood">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+        <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+     </head>
+    <style>
+        body {width:95%;}
+        .first {width:100px;}
+    </style>
+    
+    <body>
+<h2>Weather Stations with October Monthly Precip Records</h2>
+
+<table id="omtable" class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Station</th>
+<th title="Field #2">New Record</th>
+<th title="Field #3">Old Record</th>
+<th title="Field #4">Old Record Year</th>
+<th title="Field #5">Period of Record</th>
+<th title="Field #6">LAT</th>
+<th title="Field #7">LONG</th>
+</tr></thead>
+<tbody><tr><td>CHARLESTON CITY</td>
+<td align="right">17.49</td>
+<td align="right">11.74</td>
+<td align="right">1959</td>
+<td>1893-2015</td>
+<td align="right">32.78</td>
+<td align="right">-79.93</td>
+</tr>
+<tr><td>NEWBERRY</td>
+<td align="right">12.86</td>
+<td align="right">11.44</td>
+<td align="right">1929</td>
+<td>1893-2015</td>
+<td align="right">34.30</td>
+<td align="right">-81.62</td>
+</tr>
+<tr><td>MARION</td>
+<td align="right">14.40</td>
+<td align="right">14.30</td>
+<td align="right">1968</td>
+<td>1893-2015</td>
+<td align="right">34.17</td>
+<td align="right">-79.39</td>
+</tr>
+<tr><td>LITTLE MTN</td>
+<td align="right">17.54</td>
+<td align="right">11.15</td>
+<td align="right">1964</td>
+<td>1893-2015</td>
+<td align="right">34.19</td>
+<td align="right">-81.42</td>
+</tr>
+<tr><td>WINNSBORO</td>
+<td align="right">14.61</td>
+<td align="right">13.00</td>
+<td align="right">1990</td>
+<td>1896-2015</td>
+<td align="right">34.37</td>
+<td align="right">-81.09</td>
+</tr>
+<tr><td>SUMTER</td>
+<td align="right">24.64</td>
+<td align="right">15.41</td>
+<td align="right">1990</td>
+<td>1901-2015</td>
+<td align="right">33.94</td>
+<td align="right">-80.36</td>
+</tr>
+<tr><td>SALUDA</td>
+<td align="right">14.12</td>
+<td align="right">11.79</td>
+<td align="right">1929</td>
+<td>1902-2015</td>
+<td align="right">34.00</td>
+<td align="right">-81.77</td>
+</tr>
+<tr><td>WALTERBORO 1 SW</td>
+<td align="right">10.35</td>
+<td align="right">9.66</td>
+<td align="right">1959</td>
+<td>1903-2015</td>
+<td align="right">32.88</td>
+<td align="right">-80.68</td>
+</tr>
+<tr><td>CLEMSON UNIV</td>
+<td align="right">11.86</td>
+<td align="right">9.66</td>
+<td align="right">1959</td>
+<td>1930-2015</td>
+<td align="right">34.66</td>
+<td align="right">-82.82</td>
+</tr>
+<tr><td>CHARLESTON INTL AP</td>
+<td align="right">18.91</td>
+<td align="right">12.11</td>
+<td align="right">1994</td>
+<td>1938-2015</td>
+<td align="right">32.90</td>
+<td align="right">-80.04</td>
+</tr>
+<tr><td>HARTSVILLE</td>
+<td align="right">11.03</td>
+<td align="right">7.54</td>
+<td align="right">1999</td>
+<td>1947-2015</td>
+<td align="right">34.40</td>
+<td align="right">-80.05</td>
+</tr>
+<tr><td>COLUMBIA METRO AP</td>
+<td align="right">14.46</td>
+<td align="right">12.09</td>
+<td align="right">1959</td>
+<td>1948-2015</td>
+<td align="right">33.94</td>
+<td align="right">-81.12</td>
+</tr>
+<tr><td>FLORENCE RGNL AP</td>
+<td align="right">14.71</td>
+<td align="right">10.83</td>
+<td align="right">1990</td>
+<td>1948-2015</td>
+<td align="right">34.19</td>
+<td align="right">-79.72</td>
+</tr>
+<tr><td>MONCKS CORNER 4 N</td>
+<td align="right">19.33</td>
+<td align="right">6.91</td>
+<td align="right">2008</td>
+<td>1948-2015</td>
+<td align="right">33.24</td>
+<td align="right">-79.99</td>
+</tr>
+<tr><td>PICKENS</td>
+<td align="right">9.17</td>
+<td align="right">8.65</td>
+<td align="right">1959</td>
+<td>1951-2015</td>
+<td align="right">34.88</td>
+<td align="right">-82.72</td>
+</tr>
+<tr><td>ANTREVILLE</td>
+<td align="right">10.01</td>
+<td align="right">8.93</td>
+<td align="right">1964</td>
+<td>1952-2015</td>
+<td align="right">34.29</td>
+<td align="right">-82.53</td>
+</tr>
+<tr><td>COLUMBIA UNIV OF SC</td>
+<td align="right">16.50</td>
+<td align="right">12.92</td>
+<td align="right">1959</td>
+<td>1954-2015</td>
+<td align="right">33.98</td>
+<td align="right">-81.02</td>
+</tr>
+<tr><td>SANDHILL RSCH</td>
+<td align="right">17.94</td>
+<td align="right">13.62</td>
+<td align="right">1964</td>
+<td>1957-2015</td>
+<td align="right">34.14</td>
+<td align="right">-80.87</td>
+</tr>
+<tr><td>BROOKGREEN GARDENS</td>
+<td align="right">16.79</td>
+<td align="right">13.27</td>
+<td align="right">1995</td>
+<td>1957-2015</td>
+<td align="right">33.52</td>
+<td align="right">-79.10</td>
+</tr>
+<tr><td>ANDREWS</td>
+<td align="right">22.73</td>
+<td align="right">14.41</td>
+<td align="right">1990</td>
+<td>1962-2015</td>
+<td align="right">33.44</td>
+<td align="right">-79.57</td>
+</tr>
+<tr><td>WEST PELZER 2 W</td>
+<td align="right">9.80</td>
+<td align="right">8.64</td>
+<td align="right">1990</td>
+<td>1965-2015</td>
+<td align="right">34.65</td>
+<td align="right">-82.49</td>
+</tr>
+
+</tbody></table>
+        
+        <script>
+            $(document).ready(function() {
+                $('#omtable').DataTable();
+            } );
+            
+            $('#omtable').DataTable({
+                paging:false,
+                searching:false
+            });
+                
+        </script>
+        
+    </body>
+</html>

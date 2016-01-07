@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Oct Daily Precip Table</title>
+        <meta name="description" content="Oct Daily Precip table for SC Flood">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+        <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+     </head>
+    <style>
+        body {width:95%;}
+        .first {width:100px;}
+    </style>
+    
+    <body>
+<h2>Weather Stations with October Single Day Precip Records</h2>
+
+<table id = "odtable" class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Station</th>
+<th title="Field #2">New Record</th>
+<th title="Field #3">New Record Date</th>
+<th title="Field #4">Old Record</th>
+<th title="Field #5">Old Record Date</th>
+<th title="Field #6">Period of Record</th>
+<th title="Field #7">LAT</th>
+<th title="Field #8">LONG</th>
+</tr></thead>
+<tbody><tr><td>SUMTER</td>
+<td align="right">10.67</td>
+<td>10/04/15</td>
+<td align="right">8.21</td>
+<td>10/11/90</td>
+<td>1901-2015</td>
+<td align="right">33.94</td>
+<td align="right">-80.36</td>
+</tr>
+<tr><td>ANDREWS</td>
+<td align="right">8.80</td>
+<td>10/04/15</td>
+<td align="right">7.60</td>
+<td>10/07/05</td>
+<td>1962-2015</td>
+<td align="right">33.44</td>
+<td align="right">-79.57</td>
+</tr>
+<tr><td>SALUDA</td>
+<td align="right">7.74</td>
+<td>10/04/15</td>
+<td align="right">7.15</td>
+<td>10/01/29</td>
+<td>1902-2015</td>
+<td align="right">34.00</td>
+<td align="right">-81.77</td>
+</tr>
+<tr><td>CHARLESTON CITY</td>
+<td align="right">9.25</td>
+<td>10/03/15</td>
+<td align="right">6.79</td>
+<td>10/18/65</td>
+<td>1893-2015</td>
+<td align="right">32.78</td>
+<td align="right">-79.93</td>
+</tr>
+<tr><td>BROOKGREEN GARDENS</td>
+<td align="right">9.85</td>
+<td>10/05/15</td>
+<td align="right">6.62</td>
+<td>10/18/68</td>
+<td>1957-2015</td>
+<td align="right">33.52</td>
+<td align="right">-79.10</td>
+</tr>
+<tr><td>CHARLESTON INTL AP</td>
+<td align="right">11.50</td>
+<td>10/03/15</td>
+<td align="right">6.57</td>
+<td>10/24/08</td>
+<td>1938-2015</td>
+<td align="right">32.90</td>
+<td align="right">-80.04</td>
+</tr>
+<tr><td>LITTLE MTN</td>
+<td align="right">7.35</td>
+<td>10/04/15</td>
+<td align="right">6.55</td>
+<td>10/01/29</td>
+<td>1893-2015</td>
+<td align="right">34.19</td>
+<td align="right">-81.42</td>
+</tr>
+<tr><td>SUMMERVILLE 4W</td>
+<td align="right">9.20</td>
+<td>10/04/15</td>
+<td align="right">5.52</td>
+<td>10/24/08</td>
+<td>1898-2015</td>
+<td align="right">33.04</td>
+<td align="right">-80.23</td>
+</tr>
+<tr><td>DARLINGTON</td>
+<td align="right">6.94</td>
+<td>10/03/15</td>
+<td align="right">5.15</td>
+<td>10/15/54</td>
+<td>1896-2015</td>
+<td align="right">34.30</td>
+<td align="right">-79.88</td>
+</tr>
+<tr><td>CLEMSON UNIV</td>
+<td align="right">5.28</td>
+<td>10/02/15</td>
+<td align="right">4.93</td>
+<td>10/01/65</td>
+<td>1930-2015</td>
+<td align="right">34.66</td>
+<td align="right">-82.82</td>
+</tr>
+<tr><td>MONCKS CORNER 4 N</td>
+<td align="right">9.40</td>
+<td>10/04/15</td>
+<td align="right">4.10</td>
+<td>10/25/08</td>
+<td>1948-2015</td>
+<td align="right">33.24</td>
+<td align="right">-79.99</td>
+</tr>
+<tr><td>COLUMBIA METRO AP</td>
+<td align="right">6.87</td>
+<td>10/04/15</td>
+<td align="right">4.09</td>
+<td>10/15/64</td>
+<td>1948-2015</td>
+<td align="right">33.94</td>
+<td align="right">-81.12</td>
+</tr>
+<tr><td>WALTERBORO 1 SW</td>
+<td align="right">4.23</td>
+<td>10/04/15</td>
+<td align="right">3.97</td>
+<td>10/20/44</td>
+<td>1903-2015</td>
+<td align="right">32.88</td>
+<td align="right">-80.68</td>
+</tr>
+<tr><td>BATESBURG</td>
+<td align="right">5.10</td>
+<td>10/04/15</td>
+<td align="right">3.95</td>
+<td>10/11/90</td>
+<td>1894-2015</td>
+<td align="right">33.90</td>
+<td align="right">-81.54</td>
+</tr>
+<tr><td>ANTREVILLE</td>
+<td align="right">6.10</td>
+<td>10/04/15</td>
+<td align="right">3.80</td>
+<td>10/29/70</td>
+<td>1952-2015</td>
+<td align="right">34.29</td>
+<td align="right">-82.53</td>
+</tr>
+<tr><td>MANNING</td>
+<td align="right">8.55</td>
+<td>10/04/15</td>
+<td align="right">2.80</td>
+<td>10/29/03</td>
+<td>1948-2015</td>
+<td align="right">33.70</td>
+<td align="right">-80.20</td>
+</tr>
+</tbody></table>
+        <script>
+            $(document).ready(function() {
+                $('#odtable').DataTable();
+            } );
+            
+            $('#odtable').DataTable({
+                paging:false,
+                searching:false
+            });
+                
+        </script>
+        
+    </body>
+</html>
