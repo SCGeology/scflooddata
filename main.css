@@ -8,7 +8,7 @@ html {
 body {
     margin: 0 auto;
     padding: 2em 2em 4em;
-    max-width: 800px;
+    max-width: 900px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3em;
 }
 
-h4 {background-color:#eee; padding:0.3em 0.1em;}
+h4 {background-color:#eee; padding:0.3em 0.5em;}
 
 h2 {
     margin-top: 1.3em;
@@ -38,25 +38,14 @@ b, strong {
 }
 
 /*STUFF ADDED BY TANNER*/
-#opentable {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); /* Yep! */
-  width: 95%;
-  height: 95%;
-  background-color:#fff;
-  box-shadow: 2px 2px 4px #ddd;
-  border:1px solid #ccc;
-  z-index: 10000;
-  display: none;
-}
+
 .download-data, .view-data, .view-map {border-radius:5px; padding: 2px 5px; margin:0 5px;font-weight: normal;font-size: 12px;border:2px solid transparent;color:#fff;}
 .download-data:hover, .view-data:hover, .view-map:hover {background-color: transparent;color:black;border:2px solid gray;cursor: pointer;}
 .download-data {background-color:#0099ff;}
 .view-data {background-color: #339966;text-decoration: underline;line-height:1.2em;display: inline-block;}
 .view-map {background-color: #ff9900;}
 .data-section li {margin:12px 0;font-weight: bold;font-size:0.9em;}
+.data-section p {margin-left:15px;}
 #logo{position: relative; float:right; height:100px; width: auto;border:none;} 
 
 #tableclose {position: relative; float: right; margin: 3px 5px 0 0;cursor: pointer;}
@@ -65,9 +54,13 @@ b, strong {
 
 .noscroll{overflow-y: hidden;}
 
+#images{width:100%;height:auto;}
+#images img {width:40%;height:auto;box-shadow:2px 2px 4px #ccc;margin:5px;}
+#images p {margin:3px 20px;font-weight: bold;}
+
 /*~~~~~~~~~~~~~~~~*/
 
-img {
+/*img {
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
@@ -76,7 +69,7 @@ img {
     display: block;
     margin: 1.3em auto;
     max-width: 95%;
-}
+}*/
 
 @-webkit-keyframes colorize {
     0% {
